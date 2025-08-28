@@ -22,3 +22,40 @@ This project is a **mini full-stack application** that simulates a real-world wo
 ---
 
 ## Project Structure
+aaa/
+├── backend/
+│ ├── app.py # FastAPI app
+│ ├── services/ # Downloader, parser, storage
+│ ├── models.py # Pydantic models
+│ ├── data.csv # Passenger input file
+│ └── invoices/ # Folder for generated PDFs
+├── frontend/
+│ ├── src/
+│ │ ├── components/ # React components
+│ │ ├── pages/ # Dashboard pages
+│ │ └── App.jsx # Main React app
+│ └── package.json
+├── requirements.txt # Backend dependencies
+└── README.md
+
+
+
+
+---
+
+## Installation
+
+### Backend
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate       # Windows
+pip install --upgrade pip
+pip install -r requirements.txt
+uvicorn app:app --reload
+
+f#rontend
+cd frontend
+npm install
+npm start
+Frontend
